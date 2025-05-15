@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dự đoán năng suất cây trồng</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Nhập thông tin để dự đoán năng suất</h2>
+
+        <label>Khu vực (Region):</label>
+        <input type="text" id="Region">
+
+        <label>Loại đất (Soil Type):</label>
+        <input type="text" id="Soil_Type">
+
+        <label>Loại cây trồng (Crop):</label>
+        <input type="text" id="Crop">
+
+        <label>Điều kiện thời tiết (Weather Condition):</label>
+        <input type="text" id="Weather_Condition">
+
+        <label>Lượng phân bón (Fertilizer Used):</label>
+        <select id="Fertilizer_Used">
+            <option value="1">Có</option>
+            <option value="0">Không</option>
+        </select>
+
+        <label>Đã tưới nước (Irrigation Used):</label>
+        <select id="Irrigation_Used">
+            <option value="1">Có</option>
+            <option value="0">Không</option>
+        </select>
+
+        <label>Nhiệt độ (°C):</label>
+        <input type="number" id="Temperature_Celsius">
+
+        <label>Lượng mưa (mm):</label>
+        <input type="number" id="Rainfall_mm">
+
+        <label>Số ngày đến thu hoạch:</label>
+        <input type="number" id="Days_to_Harvest">
+
+        <button onclick="predict()">Dự đoán</button>
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+
+</html>
