@@ -1,13 +1,26 @@
 /* Thiết lập chung */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #eef2f7;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     margin: 0;
     padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
+    position: relative;
+}
+
+/* Logo trường Thủy Lợi */
+.logo-tlu {
+    position: absolute;
+    top: 95px;
+    left: 100px;
+    height: 100px;
+    z-index: 100;
 }
 
 /* Khối chứa nội dung */
@@ -18,6 +31,7 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     width: 100%;
     max-width: 500px;
+    margin-top: 60px;
 }
 
 /* Tiêu đề */
